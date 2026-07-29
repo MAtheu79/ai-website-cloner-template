@@ -2,54 +2,40 @@ import Image from "next/image";
 import {
   BookIcon,
   EyeIcon,
+  HandshakeIcon,
+  HeartIcon,
+  LawIcon,
   LinkExternalIcon,
-  ListUnorderedIcon,
+  PeopleIcon,
   PulseIcon,
   RepoForkedIcon,
-  ShieldIcon,
   StarIcon,
-  TagIcon,
 } from "@/components/icons";
-import type { Contributor, LanguageStat, TopicTag } from "@/types/github";
+import type { Contributor, TopicTag } from "@/types/github";
 
 const topics: TopicTag[] = [
-  { label: "tts", href: "https://github.com/topics/tts" },
-  { label: "transformer", href: "https://github.com/topics/transformer" },
-  { label: "llama", href: "https://github.com/topics/llama" },
-  { label: "valle", href: "https://github.com/topics/valle" },
-  { label: "vqvae", href: "https://github.com/topics/vqvae" },
-  { label: "vits", href: "https://github.com/topics/vits" },
-  { label: "vqgan", href: "https://github.com/topics/vqgan" },
+  { label: "awesome", href: "https://github.com/topics/awesome" },
+  { label: "awesome-list", href: "https://github.com/topics/awesome-list" },
+  { label: "lists", href: "https://github.com/topics/lists" },
+  { label: "resources", href: "https://github.com/topics/resources" },
+  { label: "unicorns", href: "https://github.com/topics/unicorns" },
 ];
 
 const contributors: Contributor[] = [
-  { login: "leng-yue", avatarSrc: "/images/avatars/leng-yue.png" },
-  { login: "AnyaCoder", avatarSrc: "/images/avatars/AnyaCoder.png" },
-  { login: "PoTaTo-Mika", avatarSrc: "/images/avatars/PoTaTo-Mika.png" },
-  { login: "Stardust-minus", avatarSrc: "/images/avatars/Stardust-minus.png" },
-  { login: "Whale-Dolphin", avatarSrc: "/images/avatars/Whale-Dolphin.png" },
-  { login: "pre-commit-ci", avatarSrc: "/images/avatars/pre-commit-ci.png" },
-  { login: "wishhyt", avatarSrc: "/images/avatars/wishhyt.png" },
-  { login: "Enucatl", avatarSrc: "/images/avatars/Enucatl.png" },
-  { login: "Tps-F", avatarSrc: "/images/avatars/Tps-F.png" },
-  { login: "v3ucn", avatarSrc: "/images/avatars/v3ucn.png" },
-  {
-    login: "PriesiaMioShirakana",
-    avatarSrc: "/images/avatars/PriesiaMioShirakana.png",
-  },
-  { login: "Picus303", avatarSrc: "/images/avatars/Picus303.png" },
-  { login: "OedoSoldier", avatarSrc: "/images/avatars/OedoSoldier.png" },
-  { login: "eltociear", avatarSrc: "/images/avatars/eltociear.png" },
-];
-
-const languages: LanguageStat[] = [
-  { name: "Python", percent: 80.8, color: "#3572A5" },
-  { name: "TypeScript", percent: 14.3, color: "#3178c6" },
-  { name: "Dockerfile", percent: 3.0, color: "#384d54" },
-  { name: "Jupyter Notebook", percent: 1.2, color: "#DA5B0B" },
-  { name: "CSS", percent: 0.5, color: "#563d7c" },
-  { name: "JavaScript", percent: 0.1, color: "#f1e05a" },
-  { name: "Other", percent: 0.1, color: "#8256d0" },
+  { login: "sindresorhus", avatarSrc: "/images/avatars/sindresorhus.png" },
+  { login: "davisonio", avatarSrc: "/images/avatars/davisonio.png" },
+  { login: "RichardLitt", avatarSrc: "/images/avatars/RichardLitt.png" },
+  { login: "arthurvr", avatarSrc: "/images/avatars/arthurvr.png" },
+  { login: "kdeldycke", avatarSrc: "/images/avatars/kdeldycke.png" },
+  { login: "AllThingsSmitty", avatarSrc: "/images/avatars/AllThingsSmitty.png" },
+  { login: "PatrickJS", avatarSrc: "/images/avatars/PatrickJS.png" },
+  { login: "RayBB", avatarSrc: "/images/avatars/RayBB.png" },
+  { login: "stevestock", avatarSrc: "/images/avatars/stevestock.png" },
+  { login: "johnjago", avatarSrc: "/images/avatars/johnjago.png" },
+  { login: "fabacab", avatarSrc: "/images/avatars/fabacab.png" },
+  { login: "egeerardyn", avatarSrc: "/images/avatars/egeerardyn.png" },
+  { login: "mischah", avatarSrc: "/images/avatars/mischah.png" },
+  { login: "vinkla", avatarSrc: "/images/avatars/vinkla.png" },
 ];
 
 function CountBadge({ count }: { count: number }) {
@@ -91,23 +77,8 @@ export default function RepoSidebar() {
       >
         <SidebarHeading>About</SidebarHeading>
         <p style={{ fontSize: 16, color: "#f0f6fc", margin: "8px 0" }}>
-          SOTA Open Source TTS
+          😎 Awesome lists about all kinds of interesting topics
         </p>
-
-        <div className="flex items-center gap-2">
-          <LinkExternalIcon
-            width={16}
-            height={16}
-            style={{ color: "#4493f8" }}
-          />
-          <a
-            href="https://speech.fish.audio"
-            className="hover:underline"
-            style={{ color: "#4493f8", fontSize: 14 }}
-          >
-            speech.fish.audio
-          </a>
-        </div>
 
         <div className="flex flex-wrap" style={{ gap: 8, marginTop: 8 }}>
           {topics.map((topic) => (
@@ -140,12 +111,28 @@ export default function RepoSidebar() {
             Readme
           </a>
           <a
-            href="#license"
+            href="#CC0-1.0-1-ov-file"
             className="flex items-center hover:underline"
             style={{ fontSize: 14, color: "#f0f6fc", gap: 8 }}
           >
-            <ShieldIcon width={16} height={16} />
-            View license
+            <LawIcon width={16} height={16} />
+            CC0-1.0 license
+          </a>
+          <a
+            href="#coc-ov-file"
+            className="flex items-center hover:underline"
+            style={{ fontSize: 14, color: "#f0f6fc", gap: 8 }}
+          >
+            <HandshakeIcon width={16} height={16} />
+            Code of conduct
+          </a>
+          <a
+            href="#contributing-ov-file"
+            className="flex items-center hover:underline"
+            style={{ fontSize: 14, color: "#f0f6fc", gap: 8 }}
+          >
+            <PeopleIcon width={16} height={16} />
+            Contributing
           </a>
           <a
             href="#activity"
@@ -154,14 +141,6 @@ export default function RepoSidebar() {
           >
             <PulseIcon width={16} height={16} />
             Activity
-          </a>
-          <a
-            href="#custom-properties"
-            className="flex items-center hover:underline"
-            style={{ fontSize: 14, color: "#f0f6fc", gap: 8 }}
-          >
-            <ListUnorderedIcon width={16} height={16} />
-            Custom properties
           </a>
         </div>
 
@@ -172,7 +151,7 @@ export default function RepoSidebar() {
             style={{ fontSize: 14, color: "#f0f6fc", gap: 8 }}
           >
             <StarIcon width={16} height={16} />
-            31.1k stars
+            490.3k stars
           </a>
           <a
             href="#watchers"
@@ -180,7 +159,7 @@ export default function RepoSidebar() {
             style={{ fontSize: 14, color: "#f0f6fc", gap: 8 }}
           >
             <EyeIcon width={16} height={16} />
-            160 watching
+            8.3k watching
           </a>
           <a
             href="#forks"
@@ -188,7 +167,7 @@ export default function RepoSidebar() {
             style={{ fontSize: 14, color: "#f0f6fc", gap: 8 }}
           >
             <RepoForkedIcon width={16} height={16} />
-            2.7k forks
+            36.1k forks
           </a>
         </div>
 
@@ -201,89 +180,99 @@ export default function RepoSidebar() {
         </a>
       </section>
 
-      {/* Section 2 — Releases */}
+      {/* Section 2 — Sponsor this project */}
       <section
         className="flex flex-col"
         style={{ borderBottom: "1px solid #3d444d", padding: "16px 0" }}
       >
-        <SidebarHeading count={14}>Releases</SidebarHeading>
+        <SidebarHeading>Sponsor this project</SidebarHeading>
 
-        <div style={{ marginTop: 12 }}>
+        <div
+          className="flex items-center justify-between"
+          style={{ marginTop: 12 }}
+        >
           <a
-            href="#latest-release"
+            href="https://github.com/sindresorhus"
             className="flex items-center hover:underline"
             style={{ gap: 8 }}
           >
-            <TagIcon width={16} height={16} style={{ color: "#3fb950" }} />
-            <span style={{ fontSize: 14, color: "#f0f6fc" }}>V1.5.1</span>
-            <span
+            <Image
+              src="/images/avatars/sindresorhus.png"
+              alt="@sindresorhus"
+              width={32}
+              height={32}
               className="rounded-full"
-              style={{
-                backgroundColor: "rgba(63,185,80,0.1)",
-                color: "#3fb950",
-                fontSize: 12,
-                padding: "0 8px",
-              }}
-            >
-              Latest
+            />
+            <span style={{ fontSize: 14 }}>
+              <strong style={{ color: "#f0f6fc" }}>sindresorhus</strong>{" "}
+              <span style={{ color: "#9198a1" }}>Sindre Sorhus</span>
             </span>
           </a>
-          <p style={{ fontSize: 12, color: "#9198a1", marginTop: 4 }}>
-            on May 31, 2025
-          </p>
-        </div>
-
-        <a
-          href="#releases"
-          className="hover:underline"
-          style={{ fontSize: 14, color: "#4493f8", marginTop: 12 }}
-        >
-          + 13 releases
-        </a>
-      </section>
-
-      {/* Section 3 — Deployments */}
-      <section
-        className="flex flex-col"
-        style={{ borderBottom: "1px solid #3d444d", padding: "16px 0" }}
-      >
-        <SidebarHeading count={307}>Deployments</SidebarHeading>
-
-        <div className="flex items-center" style={{ marginTop: 12, gap: 8 }}>
-          <span
-            className="rounded-full"
-            style={{
-              width: 8,
-              height: 8,
-              backgroundColor: "#3fb950",
-              display: "inline-block",
-            }}
-          />
           <a
-            href="#deployments"
-            className="hover:underline"
-            style={{ fontSize: 14, color: "#f0f6fc", fontWeight: 500 }}
+            href="https://github.com/sponsors/sindresorhus"
+            aria-label="Sponsor @sindresorhus"
+            className="flex items-center justify-center rounded-md border border-[#3d444d]"
+            style={{ width: 32, height: 32, color: "#db61a2" }}
           >
-            github-pages
+            <HeartIcon width={16} height={16} />
           </a>
-          <span style={{ fontSize: 14, color: "#9198a1" }}>last month</span>
+        </div>
+
+        <div className="flex flex-col" style={{ marginTop: 12, gap: 10 }}>
+          <a
+            href="https://opencollective.com/sindresorhus"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center hover:underline"
+            style={{ gap: 8, fontSize: 14, color: "#f0f6fc" }}
+          >
+            <Image
+              src="/images/badges/open-collective.svg"
+              alt=""
+              width={20}
+              height={20}
+            />
+            opencollective.com/sindresorhus
+          </a>
+          <a
+            href="https://buymeacoffee.com/sindresorhus"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center hover:underline"
+            style={{ gap: 8, fontSize: 14, color: "#f0f6fc" }}
+          >
+            <Image
+              src="/images/badges/buy-me-a-coffee.svg"
+              alt=""
+              width={20}
+              height={20}
+            />
+            buymeacoffee.com/sindresorhus
+          </a>
+          <a
+            href="https://sindresorhus.com/donate"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center hover:underline"
+            style={{ gap: 8, fontSize: 14, color: "#f0f6fc" }}
+          >
+            <LinkExternalIcon width={16} height={16} />
+            sindresorhus.com/donate
+          </a>
         </div>
 
         <a
-          href="#deployments"
+          href="/sponsors"
           className="hover:underline"
           style={{ fontSize: 14, color: "#4493f8", marginTop: 12 }}
         >
-          + 306 deployments
+          Learn more about GitHub Sponsors
         </a>
       </section>
 
-      {/* Section 4 — Contributors */}
-      <section
-        className="flex flex-col"
-        style={{ borderBottom: "1px solid #3d444d", padding: "16px 0" }}
-      >
-        <SidebarHeading count={98}>Contributors</SidebarHeading>
+      {/* Section 3 — Contributors */}
+      <section className="flex flex-col" style={{ padding: "16px 0" }}>
+        <SidebarHeading count={621}>Contributors</SidebarHeading>
 
         <div className="flex flex-wrap" style={{ marginTop: 12, gap: 4 }}>
           {contributors.map((contributor) => (
@@ -304,58 +293,12 @@ export default function RepoSidebar() {
         </div>
 
         <a
-          href="#contributors"
+          href="https://github.com/sindresorhus/awesome/graphs/contributors"
           className="hover:underline"
           style={{ fontSize: 14, color: "#4493f8", marginTop: 12 }}
         >
-          + 84 contributors
+          + 607 contributors
         </a>
-      </section>
-
-      {/* Section 5 — Languages */}
-      <section className="flex flex-col" style={{ padding: "16px 0" }}>
-        <SidebarHeading>Languages</SidebarHeading>
-
-        <div
-          className="flex overflow-hidden"
-          style={{ height: 8, borderRadius: 9999, marginTop: 12 }}
-        >
-          {languages.map((language) => (
-            <span
-              key={language.name}
-              style={{
-                width: `${language.percent}%`,
-                backgroundColor: language.color,
-              }}
-            />
-          ))}
-        </div>
-
-        <div
-          className="flex flex-wrap"
-          style={{ marginTop: 12, columnGap: 16, rowGap: 8 }}
-        >
-          {languages.map((language) => (
-            <div
-              key={language.name}
-              className="flex items-center"
-              style={{ width: "45%", gap: 6, fontSize: 12 }}
-            >
-              <span
-                className="rounded-full"
-                style={{
-                  width: 8,
-                  height: 8,
-                  backgroundColor: language.color,
-                  display: "inline-block",
-                  flexShrink: 0,
-                }}
-              />
-              <span style={{ color: "#f0f6fc" }}>{language.name}</span>
-              <span style={{ color: "#9198a1" }}>{language.percent}%</span>
-            </div>
-          ))}
-        </div>
       </section>
     </div>
   );

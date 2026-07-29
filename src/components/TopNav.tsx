@@ -17,9 +17,8 @@ interface NavTab {
 
 const NAV_TABS: NavTab[] = [
   { label: "Code", active: true },
-  { label: "Issues", count: 9 },
-  { label: "Pull requests", count: 5 },
-  { label: "Discussions" },
+  { label: "Issues", count: 16 },
+  { label: "Pull requests", count: 82 },
   { label: "Actions" },
   { label: "Security and quality" },
   { label: "Insights" },
@@ -168,14 +167,14 @@ export default function TopNav() {
             href="#"
             className="font-normal text-[#f0f6fc] hover:text-[#4493f8] hover:underline"
           >
-            fishaudio
+            sindresorhus
           </a>
           <span className="text-[#9198a1]">/</span>
           <a
             href="#"
             className="font-semibold text-[#f0f6fc] hover:text-[#4493f8] hover:underline"
           >
-            fish-speech
+            awesome
           </a>
           <button
             type="button"
@@ -233,8 +232,8 @@ export default function TopNav() {
 
           <a href="#" aria-label="View profile" className="flex-shrink-0">
             <Image
-              src="/images/avatars/fishaudio.png"
-              alt="fishaudio"
+              src="/images/avatars/sindresorhus.png"
+              alt="sindresorhus"
               width={32}
               height={32}
               className="h-8 w-8 rounded-full"

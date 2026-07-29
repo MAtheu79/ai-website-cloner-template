@@ -4,7 +4,7 @@ import ReadmeTabs from "@/components/ReadmeTabs";
 
 export default async function ReadmeSection() {
   const readmeContent = fs.readFileSync(
-    path.join(process.cwd(), "src/content/fish-speech-readme.md"),
+    path.join(process.cwd(), "src/content/awesome-readme.md"),
     "utf-8",
   );
 

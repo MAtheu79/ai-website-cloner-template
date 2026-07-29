@@ -2,9 +2,10 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "fishaudio/fish-speech: SOTA Open Source TTS",
+  title:
+    "GitHub - sindresorhus/awesome: 😎 Awesome lists about all kinds of interesting topics",
   description:
-    "SOTA Open Source TTS. Contribute to fishaudio/fish-speech development by creating an account on GitHub.",
+    "😎 Awesome lists about all kinds of interesting topics. Contribute to sindresorhus/awesome development by creating an account on GitHub.",
   icons: {
     icon: "/seo/favicon.svg",
   },
