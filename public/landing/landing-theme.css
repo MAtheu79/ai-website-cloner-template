@@ -1,0 +1,81 @@
+html[data-landing-theme] {
+  color-scheme: light dark;
+  --landing-bg: light-dark(#f8f6f2, #0b0d10);
+  --landing-panel: light-dark(#fcfbf8, #0f1318);
+  --landing-panel-2: light-dark(#f0ede8, #0b0f14);
+  --landing-text: light-dark(#1a1c1e, #e6edf3);
+  --landing-muted: light-dark(#5c6570, #9aa6b2);
+  --landing-border: light-dark(rgba(26, 28, 30, 0.12), rgba(255, 255, 255, 0.08));
+  --landing-border-strong: light-dark(rgba(26, 28, 30, 0.18), rgba(255, 255, 255, 0.16));
+  --landing-gold: light-dark(#9b7130, #d4a640);
+  --landing-grid-dot: light-dark(rgba(40, 35, 27, 0.055), rgba(255, 255, 255, 0.05));
+  --landing-heading: light-dark(#27231e, #e8e1d7);
+  --landing-copy: light-dark(#39342d, #e0d9d0);
+  --landing-byline: light-dark(#6d665c, #b3aaa0);
+  --landing-link: light-dark(#8b6428, #f0c96e);
+  --landing-surface: light-dark(rgba(255, 255, 255, 0.78), rgba(11, 13, 16, 0.88));
+  --landing-card-border: light-dark(rgba(44, 39, 31, 0.18), #2a2c30);
+  --landing-card-bg: light-dark(#fcfbf8, #0e1113);
+  --bg: var(--landing-bg);
+  --panel: var(--landing-panel);
+  --panel2: var(--landing-panel-2);
+  --text: var(--landing-text);
+  --muted: var(--landing-muted);
+  --border: var(--landing-border);
+  --border2: var(--landing-border-strong);
+  --gold: var(--landing-gold);
+  /* diffui-button's light outline and subtle states read --brand-gold, which only the app
+     shell set; without it they fell back to the dark theme's bright #ffcc00. */
+  --brand-gold: light-dark(#9b7130, #ffcc00);
+  --line: var(--landing-border-strong);
+  --heading: var(--landing-heading);
+  --copy: var(--landing-copy);
+  --byline: var(--landing-byline);
+  --link: var(--landing-link);
+  --surface: var(--landing-surface);
+  --card-border: var(--landing-card-border);
+  --card-bg: var(--landing-card-bg);
+  --sidebar-hover: light-dark(rgba(26, 28, 30, 0.06), rgba(255, 255, 255, 0.06));
+  /* Link blue for the static legal pages (tos, privacy, changelog, account-deleted). The dark
+     value is styles.css's :root accent; #4aa3ff washes out on the cream light background. */
+  --accent: light-dark(#1f6fd0, #4aa3ff);
+  /* Toasts can surface over marketing pages, so status colours need a light value here too. */
+  --danger: light-dark(#c9503c, #ff5c5c);
+  --success: light-dark(#2f6a59, #63be7b);
+  --gold-soft: light-dark(#9b7130, #b78c2f);
+  --gold-muted: light-dark(rgba(151, 113, 32, 0.85), rgba(212, 166, 64, 0.72));
+  --dot: var(--landing-grid-dot);
+  --compare-bg: light-dark(#f3f0eb, #0e1113);
+  --compare-divider: light-dark(rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.25));
+  --compare-overlay-opacity: light-dark(0.22, 0.4);
+  --vs-bg: light-dark(#ffffff, #0b0d10);
+  --vs-border: light-dark(rgba(26, 28, 30, 0.14), #2a2b2d);
+  --vs-text: var(--landing-muted);
+  --mock-bg: light-dark(#ffffff, #0a0b0d);
+  --mock-border: light-dark(rgba(26, 28, 30, 0.12), #1a1c1f);
+  --mock-border-strong: light-dark(rgba(26, 28, 30, 0.18), #2a2c30);
+  --mock-text: var(--landing-text);
+  --mock-muted: var(--landing-muted);
+  --mock-input-bg: light-dark(#f8f6f2, #101215);
+  --mock-input-border: light-dark(rgba(26, 28, 30, 0.1), #1e2023);
+  --code-text: light-dark(#30343a, #d7dbdf);
+  --code-line-num: light-dark(#8a929b, #444a52);
+  --code-gutter-border: light-dark(#e1ddd6, #16181b);
+  --fee-label-bg: light-dark(rgba(212, 166, 64, 0.12), rgba(212, 166, 64, 0.08));
+  --card-glow-1: light-dark(rgba(212, 166, 64, 0.1), rgba(212, 166, 64, 0.08));
+  --card-glow-2: light-dark(rgba(212, 166, 64, 0.06), rgba(212, 166, 64, 0.06));
+  --surface-highlight: light-dark(rgba(255, 255, 255, 0.76), rgba(255, 255, 255, 0.018));
+  --summary: light-dark(#5f564b, #beb5a9);
+  --author: light-dark(#26231e, #f0ece6);
+  --author-border: light-dark(rgba(155, 113, 48, 0.45), #414247);
+  --command-bg: light-dark(rgba(255, 255, 255, 0.78), rgba(11, 13, 16, 0.72));
+  --command-text: light-dark(#29251f, #f0e7d9);
+}
+
+html[data-landing-theme="light"] {
+  color-scheme: light;
+}
+
+html[data-landing-theme="dark"] {
+  color-scheme: dark;
+}

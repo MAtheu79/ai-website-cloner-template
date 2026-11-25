@@ -12,6 +12,9 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // linen.ai's own client modules, vendored verbatim and served as static files.
+    "public/landing/**",
+    "public/app/**",
   ]),
 ]);
 
