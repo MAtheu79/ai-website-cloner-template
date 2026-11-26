@@ -1,0 +1,150 @@
+# SkillSpector baseline — findings listed here are suppressed on future scans.
+# Edit 'reason' fields and add glob 'rules' as needed. See docs/SUPPRESSION.md.
+version: 2
+scanner_version: 2.13.7
+rules: []
+fingerprints:
+- hash: sha256:1b3062c3b24ccfd97d145e3f796a1a251f1fcedfe6b0510ac2e299c684f3f624
+  rule_id: AST4
+  file: scripts/composite-banners.py
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:28f36a2ce4e02e23792da19c3fea62b26960e790bdc720415355a9273ba2940a
+  rule_id: AST4
+  file: scripts/composite-banners.py
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:2fd4075889d32dd5b98ee5d985148aff922c6ff803eef593638c848e81257d35
+  rule_id: AST4
+  file: scripts/composite-banners.py
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:e511ccdfc0ce2ae4c92cb7eb0f7ca086f2b8cc857e06373e1342a79d7f0e2a4f
+  rule_id: AST4
+  file: scripts/composite-banners.py
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:1f8b12ef4672572c0aa00537e2e75c162e9fcc71669ce6e256ca71a34fde799a
+  rule_id: AST4
+  file: scripts/generate-image.py
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:7e09f415a096c12d6f7e1696b48f132a18f6b0cd3d215d0052249c96a215e8c9
+  rule_id: AST4
+  file: scripts/generate-image.py
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:c91bce543014b14fee0886cdc3d14b82fe299ad12cb9ece0bf062f998e454ebd
+  rule_id: AST4
+  file: scripts/generate-image.py
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:8408cdc869515b80d71d87c28523aea3a12a08438e1cdc4d2f0d0e0a1f36d081
+  rule_id: AST4
+  file: scripts/generate-image.py
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:592c45579cecac2b11591a8356776d65f8ad8571c2af4f2a950fdafbd49f825f
+  rule_id: AST4
+  file: scripts/generate-image.py
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:0ad77082ffbb48f237d3e9c1c2285df3bdca022e2d628ef2bf9d7c8d41ff946a
+  rule_id: AST4
+  file: scripts/generate-image.py
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:0d4dece43e856a256c03ce0205b57b2ca8b99ba040de135c734a64b677fa75f2
+  rule_id: AST4
+  file: scripts/generate-image.py
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:9eeb51eb5145b7ee10d0c4d67b9b55dec87b635b8d6e9d7ae41ef9c88f140477
+  rule_id: AST4
+  file: scripts/generate-image.py
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:a1188615098fbb5aba5b2352e24b0d4f2c5683f346ec8b4a756a506edfba3083
+  rule_id: TT2
+  file: scripts/composite-banners.py
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:f139d42d655a4575a889feaa1d5791f135a0093d583c31ade084c9f07bc426ff
+  rule_id: TT2
+  file: scripts/composite-banners.py
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:1d36bfa71ff44eed69e0f2c49ef9a1db65643042870297d37a1f800848b3b814
+  rule_id: TT2
+  file: scripts/composite-banners.py
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:c075bab140d899b143191d60bb22d0b83549feff703858f60d8f8b74bca03b65
+  rule_id: TT3
+  file: scripts/generate-image.py
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:3d0eb71e26afb6ace0ebe604bad0d530f02d4b68ba6b55b6ad78c97ca60af6bc
+  rule_id: TT2
+  file: scripts/generate-image.py
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:d176e1f7ba26f3e44f7cec1ea49ffd35e0f644d4f9109b61d1c3e84c3321be5b
+  rule_id: LP1
+  file: scripts/generate-image.py
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:66bfa0aa9ed1c31ee1439f5b5d7d46a05d01399e23024f6afea36e6265c1e6db
+  rule_id: LP1
+  file: scripts/generate-image.py
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:fc73cd061ef7a6598ef22bb75c1447cfcc14dbb0b724322c713a1936531506a6
+  rule_id: AS1
+  file: references/setup-guide.md
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:e86e88f06704b0e72045268faffd9a7ecabb1072bae1356310137d8e0121e2c6
+  rule_id: E1
+  file: references/api-reference.md
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:4558aeecb77a92e21ea4bc8505850ca9b787da077d4884889d7ce8458fdbc9c0
+  rule_id: EA5
+  file: SKILL.md
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:81a1d282e571225b3e6c03f7377a4ed45fbd941c4a4e823a955669ec39f6b273
+  rule_id: PE3
+  file: scripts/generate-image.py
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:f0e86987a2d3cd20d531118d63b27d3129d03d6223928d9752468dd6439642a3
+  rule_id: PE3
+  file: scripts/generate-image.py
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:922c0e95e3d3e44106c3bcc7639a84312846f96c94c1496420a9b9b89b9f155a
+  rule_id: PE3
+  file: scripts/generate-image.py
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:12777dbc8a6d5e38d536c7dd4e5169db6c859c30b8845c2e64d892abf7855f6f
+  rule_id: PE3
+  file: scripts/generate-image.py
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:b377b844930175c3d4cf4c64a57a6095d967995c9f25f10ff13e4ca9b92521bd
+  rule_id: PE3
+  file: scripts/generate-image.py
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:fe11116841d32e7bcd1f8d0268ef0bcfda5b884239ae515c49e183a79dda0ffc
+  rule_id: PE3
+  file: scripts/generate-image.py
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:3a1a5ea8a8a459cd4a07bdca0bb7d6200aa5c49e824b71aac1be3999f77285bb
+  rule_id: PE3
+  file: scripts/generate-image.py
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:409ab17e76a23d719f89bb331708c8683d979356836deac2202c81f1c92e491e
+  rule_id: PE3
+  file: scripts/generate-image.py
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:c13933705be504d4d308f523cd57892114fa18f4efa3a96c2abb321d2f05586f
+  rule_id: PE3
+  file: scripts/generate-image.py
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:d172b080c9bcab1ff5563823629161c653a1d4f1f41b58c4b957b4a292f97084
+  rule_id: PE3
+  file: scripts/generate-image.py
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:9f1f900ce2be1a3b06ec1ce0841eec090f3fbde200c9ab9c1fe57d733f272a1c
+  rule_id: PE3
+  file: scripts/generate-image.py
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:568e3f427c4b80d1b699ba2f6488566f5c50ed667c98e70df192bd0358e0ad77
+  rule_id: SC2
+  file: references/setup-guide.md
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:e2140b6fa2866e2eca883a58e6fbc01be508412bd5a22fa7198a1f92a62105dc
+  rule_id: SC2
+  file: references/setup-guide.md
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:b5c3680ca472af392d67ccfda8652531805878802e0ce069a2160af0aca8661e
+  rule_id: TM1
+  file: SKILL.md
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'

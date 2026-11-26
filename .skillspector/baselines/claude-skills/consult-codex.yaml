@@ -1,0 +1,14 @@
+# SkillSpector baseline — findings listed here are suppressed on future scans.
+# Edit 'reason' fields and add glob 'rules' as needed. See docs/SUPPRESSION.md.
+version: 2
+scanner_version: 2.13.7
+rules: []
+fingerprints:
+- hash: sha256:f97d2138ef4c8c12a8ff34238533753d32b706eea194222ed197f31d7313b953
+  rule_id: AS1
+  file: SKILL.md
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:663b498c5a11d68108835b21055505ef9cc657615b3fffea73337344dbc7d10d
+  rule_id: TM1
+  file: SKILL.md
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'

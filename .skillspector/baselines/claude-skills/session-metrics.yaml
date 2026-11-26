@@ -1,0 +1,170 @@
+# SkillSpector baseline — findings listed here are suppressed on future scans.
+# Edit 'reason' fields and add glob 'rules' as needed. See docs/SUPPRESSION.md.
+version: 2
+scanner_version: 2.13.7
+rules: []
+fingerprints:
+- hash: sha256:b2e42acb7696f52bc2783af4429eaa40697b2b812471165c17e4f856c4f040e8
+  rule_id: AE4
+  file: scripts/session_metrics_compare.py
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:146ee957973bb89b4e9f1acf62c43739962fdb93c0941aca45d02169e22d0c41
+  rule_id: AST3
+  file: scripts/_analytics.py
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:d42b7efbc4a0395d42fe09f1d23b5ed49694584c815e45ec196f3a276572bc46
+  rule_id: AST3
+  file: scripts/_analytics.py
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:8c185e84084e8c618b7620d1f401971384ddaefe44708bcae0a5cca7884afd5d
+  rule_id: AST3
+  file: scripts/_cli.py
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:7a7c6cccdce0c4af64d6a8525d5cc60b5edc8b2b0ed85dc3d769c2d6f99c23e8
+  rule_id: AST3
+  file: scripts/_cli.py
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:6a8ca6d05e721add3d61332324e78ae695866ee81d897d4f309b34ae16f5f8ba
+  rule_id: AST7
+  file: scripts/_cli.py
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:2ef7540b8f38402a82cf2731be126e618ec4500fd2f9a92e380468e804c54f1d
+  rule_id: AST10
+  file: scripts/_data.py
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:db8fcbd27ff8822328b00deb20801a7b88c7539d7e45fe043533277aafa164cd
+  rule_id: AST3
+  file: scripts/session-metrics.py
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:63c9437f55ae0fe6bf5e70e5c85ea8d746b78928dc9d429db5d68ae7108a1785
+  rule_id: AST3
+  file: scripts/session-metrics.py
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:7e870001358ba3b16dc560e9dde88f3eda3b033b38e344260a6a1fde30365674
+  rule_id: AST1
+  file: scripts/session_metrics_compare.py
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:6637896de923d84c13a52303d8548481f912860b25fc13cee0154938823182c8
+  rule_id: LP3
+  file: SKILL.md
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:25b47c1924a478539aaa0ecdb33b84b155758594a1b0de4e81d0542fc3d5aa5b
+  rule_id: AS1
+  file: CHANGELOG.md
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:299d6ac318fc773ec8fd452d915a38be39fdbe5a15254f71b0d84b21ea65d7b9
+  rule_id: AS1
+  file: scripts/_data.py
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:f6949461b7f614fa9c63f815a499080b794110a96c7654351a2a71e006c0bd82
+  rule_id: AS1
+  file: scripts/session-metrics-quick.sh
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:6d5850fca86ccbab5db4cdb981e391113630a6909d7ebd6cdd05df58e910cdc9
+  rule_id: AS1
+  file: scripts/session-metrics-quick.sh
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:833120fa027dec3c6b7cb678195af1ceb8b073eddb2b74e27b35be4e11d2099d
+  rule_id: AR2
+  file: scripts/session-metrics.py
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:60ad35df9231fb8fb7cc76242ae2898229627e34543dabf36e74a43674eaeae7
+  rule_id: E4
+  file: scripts/_turn_parser.py
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:06ee821acbf094fcaddafb194ed612ed4646f02fcfece24ac92e53d6e9120763
+  rule_id: E1
+  file: scripts/session_metrics_compare.py
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:e99fdf139a7df1de611e2c3dc0da2cd9d97e3d129ac3e11d1adf6a07e3be4490
+  rule_id: E2
+  file: scripts/session_metrics_compare.py
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:ad5778689452fb32f5e8a2e6e0e6f86f34aa54a25419560d0061d44955f591e4
+  rule_id: EA1
+  file: scripts/session_metrics_compare.py
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:a97cab0b1d57a95ae0ec443b444b1bdba4ec84426d592d4feeb8e9a0c7616000
+  rule_id: EA1
+  file: scripts/session_metrics_compare.py
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:5b45517d22fd727d028f40a341f9223fd8c6e340b797743738d7633ddeca09ab
+  rule_id: EA2
+  file: scripts/session_metrics_compare.py
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:e46676d9dd1e24f4e0570b6a12e76e0d8594dac0b2826c2b9950af2353a40619
+  rule_id: EA3
+  file: scripts/vendor/charts/chartjs/v4/LICENSE.txt
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:ef2ad1a5ceb6fcb564f54087e3aeaf8281aca0d639ed4d02e726ff370b970f37
+  rule_id: OH3
+  file: scripts/vendor/charts/chartjs/v4/chart.umd.js
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:1f9855689c312f441cf0c38d9bf7af6cf4a856f74436e94cb69c2630c546d20f
+  rule_id: PE3
+  file: scripts/session_metrics_compare.py
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:c28cacdbd3aa9b939f00d902b65962ec1f4d023d098bba9bfb45320362eef87b
+  rule_id: P9
+  file: references/jsonl-schema.md
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:f08a0367d4580fb8ec4912ae9d0142d55c5d080c3917e40e51cd6770cb1d8867
+  rule_id: P9
+  file: references/jsonl-schema.md
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:a24913465698dd75ff0338c10c55d2f0f1637738ddc13b447c928397056ce985
+  rule_id: P9
+  file: references/jsonl-schema.md
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:aaa7fb611b902736e608fc3c96fce46a914e3aa38b3cad0b74038a3cb9db7fca
+  rule_id: RA2
+  file: scripts/_html_sections.py
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:00ec98684a934aee8edb206bea3a20a66d2e150413bd62d49e427afd94cf0c97
+  rule_id: RA2
+  file: scripts/_html_sections.py
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:f231561ecd1bca2dc96ef654b2b07892c51a9c3227678c11c5c9236fb42c5b2a
+  rule_id: RA2
+  file: scripts/_html_sections.py
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:7564dc7739d53dd0641d1b22d753e8fbd5829a43b1962b078c6b1153cf6016c5
+  rule_id: RA2
+  file: scripts/_html_sections.py
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:4888ce6cf35c8171ad23554897d2f3b8b6cd43d5fb7bf024ccec73545a8e41c3
+  rule_id: RA2
+  file: scripts/_html_sections.py
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:b5f57b82263e434da300e461e5dd8b002e64063bce72176e2f759bb58696e3c8
+  rule_id: RA2
+  file: scripts/_html_sections.py
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:cafa6aa2000c5167cf5e978633b6e3cc186e14043ec082482118c0e22b6e1ec7
+  rule_id: RA2
+  file: scripts/_html_sections.py
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:b2076e7d8dab983d86ffcc763be24b139a5758e03476e26c251a6889eabd3374
+  rule_id: P6
+  file: SKILL.md
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:e083ac60a14ce1ba2a5cc780dcb3ac7628a00738292885afa2f1f0c229a9d3e2
+  rule_id: P6
+  file: scripts/_html_sections.py
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:f7e1937e0d169b368015791ae6f4fc91e64a4a67ea0c70f91b6656c6b6fddb38
+  rule_id: P6
+  file: scripts/_html_sections.py
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:8a76ef0f3571c667df0368aca47ec8a6830cec62f6773d67a5e2604e035ef4ca
+  rule_id: P6
+  file: scripts/_html_sections.py
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:ed6d40e00f0d4d7c92ee52f3fe535f62ac53a6db549ee76312db410d7f5d09df
+  rule_id: YR4
+  file: scripts/vendor/charts/highcharts/v12/highcharts.js
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'
+- hash: sha256:b1b03880b57cf5d42f9431b28d70215b980c1d0c2d4bc59cc1fa3dd5aad633ee
+  rule_id: AE1
+  file: SKILL.md
+  reason: 'Reviewed 2026-11-26: static-analysis false positive or accepted risk'

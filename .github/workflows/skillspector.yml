@@ -1,0 +1,63 @@
+# SkillSpector: static security scan of the agent skills in this repo
+# (https://github.com/NVIDIA/skillspector).
+#
+# Each skill is scanned against its own baseline in .skillspector/baselines/.
+# The job fails only on NEW findings. To accept a reviewed false positive,
+# run `.skillspector/scan.sh baseline` locally and commit the baseline diff.
+#
+# Static analysis only (--no-llm), so no API key is needed and no file
+# contents leave the runner. SC4 sends dependency names/versions to OSV.dev,
+# so a newly published CVE in a dependency can fail this job on an
+# unrelated PR - that is intended.
+#
+# The scanner is pinned to a commit: baseline fingerprints are tied to the
+# scanner version, so bump the pin and regenerate the baselines together.
+
+name: SkillSpector
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - ".claude/skills/**"
+      - ".agents/skills/**"
+      - ".skillspector/**"
+      - ".github/workflows/skillspector.yml"
+  pull_request:
+    paths:
+      - ".claude/skills/**"
+      - ".agents/skills/**"
+      - ".skillspector/**"
+      - ".github/workflows/skillspector.yml"
+  schedule:
+    - cron: "17 6 * * 1" # weekly, to catch new CVEs in skill dependencies
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  skillspector:
+    name: Scan agent skills
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: "3.12"
+      - name: Install SkillSpector (pinned)
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install "skillspector @ git+https://github.com/NVIDIA/skillspector@02894ec5b8a0a70637df5a6b45763de92940cedd"
+          skillspector --version
+      - name: Scan skills against baselines
+        run: bash .skillspector/scan.sh scan
+      - name: Upload SARIF reports
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: skillspector-sarif
+          path: skillspector-reports/
+          if-no-files-found: ignore
+          retention-days: 30
